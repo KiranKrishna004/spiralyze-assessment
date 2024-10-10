@@ -1,5 +1,6 @@
 import "./App.css"
-import { PrimaryCTA } from "./components/PrimaryCTA"
+// import { PrimaryCTA } from "./components/PrimaryCTA"
+import { SecondaryCTA } from "./components/SecondaryCTA"
 // import { CustomInputField } from "./components/CustomInputField"
 // import { ToolTipButton } from "./components/TooltipButton"
 
@@ -14,7 +15,8 @@ function App() {
         buttonText="Treatment Planning & Placement"
         tooltipText="We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically."
       /> */}
-      <PrimaryCTA buttonText="Submit" />
+      {/* <PrimaryCTA buttonText="Submit" /> */}
+      <SecondaryCTA buttonText="Secondary CTA" />
     </>
   )
 }
