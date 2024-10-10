@@ -5,7 +5,7 @@ export const CustomInputField = ({
   errorMessage,
 }: {
   label: string
-  errorMessage: string
+  errorMessage?: string
 }) => {
   return (
     <label className={`custom-field one ${errorMessage ? "has-error" : ""}`}>

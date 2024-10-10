@@ -1,0 +1,67 @@
+.button {
+  position: relative;
+  max-width: 344px;
+  border-radius: 4px;
+  border: 2px solid #5bc8af;
+}
+
+.button__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #333333;
+  transition: all 0.3s ease;
+  cursor: default;
+  vertical-align: middle;
+}
+
+.button:hover .button__text {
+  color: #5bc8af;
+}
+
+.button__text__tip {
+  padding: 0px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button .button__tooltiptext {
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s;
+
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  width: 300px;
+  background-color: #297c6b;
+  color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 115%;
+  box-shadow: 0px 4px 8px 0px #00000014;
+  margin: auto;
+}
+
+.button .button__tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #297c6b transparent;
+}
+
+.button:hover .button__tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s;
+}
