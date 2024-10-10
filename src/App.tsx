@@ -3,7 +3,10 @@ import { CustomInputField } from "./components/CustomInputField"
 
 function App() {
   return (
-    <CustomInputField label="First Name" errorMessage="Provide First Name" />
+    <CustomInputField
+      label="First Name"
+      errorMessage="This field can’t be empty. Please fill it in."
+    />
   )
 }
 
