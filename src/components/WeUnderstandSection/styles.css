@@ -1,0 +1,25 @@
+.understand-section {
+  background: #f5f5f5;
+  padding-bottom: 130px;
+}
+
+.understand-section h2 span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333333;
+  color: transparent;
+}
+
+.understand-section h2 {
+  padding-left: 128px;
+  color: #333333;
+}
+
+.understand-section__textcontainer {
+  columns: 23.188rem auto;
+  padding: 0 128px;
+  margin-top: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}

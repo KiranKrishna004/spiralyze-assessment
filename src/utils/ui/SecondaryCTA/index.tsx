@@ -3,7 +3,7 @@ import "./styles.css"
 
 export const SecondaryCTA = ({ buttonText }: { buttonText: string }) => {
   return (
-    <button className="button" type="button">
+    <button className="secondary-button">
       {buttonText}
       <RightArrow />
     </button>
