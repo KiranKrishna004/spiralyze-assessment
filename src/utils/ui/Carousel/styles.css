@@ -1,0 +1,134 @@
+.carousel {
+  display: flex;
+  gap: 54px;
+  margin-top: -30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  max-width: 1045px;
+}
+
+.carousel__buttons {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+
+.carousel__button {
+  cursor: pointer;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  border-color: transparent;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.card-img-top {
+  object-fit: cover;
+  width: 269px;
+  height: 269px;
+}
+
+.right__arrow:hover path {
+  fill: #5bc8af;
+  transition: all 0.3s;
+}
+
+.left__arrow:hover path {
+  fill: #5bc8af;
+  transition: all 0.3s;
+}
+
+.slider-card {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: translate 0.3s ease-in-out;
+}
+
+.slick-prev {
+  left: 25px !important;
+}
+
+.slick-next {
+  right: 25px !important;
+}
+
+.slick-prev::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Cpath d='M36.24 39.76L20.48 24L36.24 8.24L32 4L12 24L32 44L36.24 39.76Z' fill='%23EAEAEA'/%3E%3C/svg%3E") !important;
+}
+
+.slick-next::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Cpath d='M11.76 8.24L27.52 24L11.76 39.76L16 44L36 24L16 4L11.76 8.24Z' fill='%23EAEAEA'/%3E%3C/svg%3E") !important;
+}
+
+.card-body {
+  border-radius: 8px;
+  background: #194d44;
+  box-shadow: 0px 10px 30px 0px #0000001f;
+  margin-left: 36px;
+  max-width: 610px;
+  flex-shrink: 0;
+  padding: 0px 65px;
+  color: #fff;
+}
+
+.card-body div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 34px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  align-items: baseline;
+}
+
+.card-body div h5 {
+  margin: 0;
+}
+
+.card-title-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+}
+
+.card-text {
+  width: 100%;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #5bc8af !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+}
+
+.slick-dots {
+  position: relative !important;
+  margin-top: 15px !important;
+}
