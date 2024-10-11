@@ -2,12 +2,7 @@
 
 html {
   background: #f5f5f54d;
-}
-
-:root {
-  background-image: url("./assets/BG.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: scroll;
 }
 
 body {

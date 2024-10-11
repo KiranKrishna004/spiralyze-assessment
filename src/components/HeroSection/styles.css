@@ -1,11 +1,14 @@
+.container {
+  background-image: url("../../assets/Herosection/BG.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
 .herosection {
   display: flex;
   justify-content: center;
   gap: 109px;
-  padding-bottom: 158px;
-  background-image: url("./assets/BGbottom1.png"), url("./assets/BGbottom2.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
+  padding-bottom: 74px;
+  margin-bottom: 80px;
 }
 
 .herosection__left {
