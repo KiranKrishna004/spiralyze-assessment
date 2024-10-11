@@ -1,11 +1,8 @@
 import "./App.css"
-// import { PrimaryCTA } from "./components/PrimaryCTA"
-import { SecondaryCTA } from "./components/SecondaryCTA"
-// import { CustomInputField } from "./components/CustomInputField"
-// import { ToolTipButton } from "./components/TooltipButton"
+import { PlayButton } from "./components/PlayButton"
 
 function App() {
-  return <SecondaryCTA buttonText="92% Success Rate" />
+  return <PlayButton />
 }
 
 export default App

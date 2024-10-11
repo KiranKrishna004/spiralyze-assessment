@@ -1,0 +1,42 @@
+.play-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.outer-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid #ffffff70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  background: #5bc8af1a;
+}
+
+.outer-circle:hover {
+  transform: scale(1.14);
+  border: 2px solid #ffffff70;
+}
+
+.outer-circle:hover .inner-circle {
+  transform: scale(0.9);
+}
+
+.inner-circle {
+  width: 154.15px;
+  height: 154.15px;
+  border-radius: 50%;
+  background: #5bc8afcc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
