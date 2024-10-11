@@ -11,7 +11,7 @@ export const CustomInputField = ({
     <label className={`custom-field one ${errorMessage ? "has-error" : ""}`}>
       <input type="text" placeholder=" " />
       <span className="placeholder">{label}</span>
-      <span className="tooltiptext">{errorMessage}</span>
+      {/* {errorMessage && <span className="tooltiptext">{errorMessage}</span>} */}
     </label>
   )
 }

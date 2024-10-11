@@ -1,0 +1,71 @@
+.custom-select {
+  position: relative;
+  font-size: 1rem;
+  border-top: 11px solid transparent;
+  margin-bottom: 5px;
+  display: inline-block;
+  --field-padding: 14px 11px;
+  width: 100%;
+}
+
+.custom-select .select-input {
+  width: 100%;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: var(--field-padding);
+  color: #ffffff;
+  border-radius: 2px;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.custom-select .placeholder {
+  position: absolute;
+  left: var(--field-padding);
+  width: calc(100% - (var(--field-padding) * 2));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 24px;
+  line-height: 100%;
+  transform: translateY(-50%);
+  color: #ffffffb2;
+  transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.custom-select .select-input:focus + .placeholder,
+.custom-select .select-input:not(:placeholder-shown) + .placeholder {
+  top: 1px;
+  font-size: 13px;
+  color: white;
+}
+
+.custom-select .select-input {
+  border-radius: 2px;
+  background: #ffffff0a;
+  border: 1px solid #ffffff80;
+  transition: all 0.3s ease;
+}
+
+.custom-select .select-input + .placeholder {
+  left: 8px;
+  padding: 0 5px;
+}
+
+.custom-select .select-input:focus {
+  border-color: #ffffff;
+  background: none;
+}
+
+.custom-select .select-input:focus + .placeholder {
+  top: 0;
+  font-size: 13px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #2a7d6c 10%, rgba(62, 105, 96, 0.62) 50%);
+  padding: 0px 5px;
+  width: auto;
+}

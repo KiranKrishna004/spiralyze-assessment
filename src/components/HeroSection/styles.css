@@ -1,0 +1,64 @@
+.herosection {
+  display: flex;
+  justify-content: center;
+  gap: 109px;
+  padding-bottom: 158px;
+  background-image: url("./assets/BGbottom1.png"), url("./assets/BGbottom2.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.herosection__left {
+  margin-top: 165px;
+}
+
+.herosection__subtext {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+  padding-top: 12px;
+  padding-left: 2px;
+  max-width: 601px;
+}
+
+.herosection__left h1 span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+}
+
+.herosection__left h1 {
+  color: #ffffff;
+}
+
+.herosection__right {
+  margin-top: 66px;
+  background: linear-gradient(180deg, #2a7d6c 0%, rgba(62, 105, 96, 0.62) 100%);
+  box-shadow: 0px 10px 50px 0px #0000001f;
+  padding: 51px 28px 56px 28px;
+  border-radius: 12px;
+}
+
+.herosection__right .herosection__right_contact {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34.13px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+
+.herosection__right div {
+  display: flex;
+  gap: 16px;
+}
+
+.herosection__right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
