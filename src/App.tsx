@@ -1,8 +1,14 @@
+import { useState } from "react"
 import "./App.css"
-import { PlayButton } from "./components/PlayButton"
+import { Navbar } from "./components/Navbar"
 
 function App() {
-  return <PlayButton />
+  const [page, setPage] = useState("/")
+  return (
+    <div>
+      <Navbar setPage={setPage} page={page} />
+    </div>
+  )
 }
 
 export default App

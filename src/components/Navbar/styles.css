@@ -1,0 +1,28 @@
+.navbar {
+  padding: 20px 128px 0px 128px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__redirect_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 31px;
+}
+
+.navbar__contact {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar__contact__number {
+  color: #5bc8af;
+}
+
+.navbar__rightsection {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}

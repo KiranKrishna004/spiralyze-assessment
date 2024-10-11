@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
 :root {
-  background-color: #205247;
+  background-image: url("./assets/BG.png");
+  background-repeat: no-repeat;
 }
 
 body {
