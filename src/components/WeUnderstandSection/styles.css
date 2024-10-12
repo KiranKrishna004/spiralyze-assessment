@@ -23,3 +23,33 @@
   line-height: 24px;
   text-align: left;
 }
+
+@media (max-width: 1015px) {
+  .understand-section__textcontainer {
+    padding: 0 24px;
+  }
+
+  .understand-section h2 {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 525px) {
+  .understand-section__textcontainer {
+    padding: 0 16px;
+  }
+
+  .understand-section h2 {
+    padding-left: 16px;
+  }
+  /* .understand-section h2 span {
+    font-size: 24px;
+    line-height: 32px;
+  } */
+
+  /* font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+text-align: left; */
+}
