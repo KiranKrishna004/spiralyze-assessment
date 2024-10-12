@@ -1,7 +1,7 @@
 .container {
   background-image: url("../../assets/Herosection/BG.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
 }
 .herosection {
   display: flex;
@@ -15,7 +15,6 @@
 }
 
 .herosection__subtext {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
