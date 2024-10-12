@@ -125,7 +125,9 @@ export const Navbar = ({
           >
             CONTACT
           </a>
-          <p style={unSelectedStyle}>|</p>
+          <p className="redirect__dash" style={unSelectedStyle}>
+            |
+          </p>
         </div>
         <span className="navbar__contact">
           CALL NOW FOR A CONSULT
