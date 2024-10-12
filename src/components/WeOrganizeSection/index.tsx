@@ -1,5 +1,15 @@
+import { ToolTipButton } from "../../utils/ui/TooltipButton"
 import "./styles.css"
 export const WeOrganizeSection = () => {
+  const oraganizeItems = [
+    "Needs Assessment",
+    "Treatment Planning & Placement",
+    "Transportation & Logistics",
+    "Insurance Advocacy",
+    "Employment Advocacy",
+    "Aftercare Planning",
+  ]
+
   return (
     <div className="organize-section">
       <h2>
@@ -27,6 +37,11 @@ export const WeOrganizeSection = () => {
         A total of 33 reviews met the inclusion criteria, evaluating a range of
         interventions targeted at older people residing in the community or
         institutionalised settings.
+      </div>
+      <div className="organize-section__buttons">
+        {oraganizeItems.map((item, index) => (
+          <ToolTipButton buttonText={item} key={`${item}-${index}`} />
+        ))}
       </div>
     </div>
   )
