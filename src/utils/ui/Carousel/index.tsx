@@ -3,8 +3,6 @@ import testimonial1 from "../../../assets/Testimonials/testimonial1.png"
 import testimonial2 from "../../../assets/Testimonials/testimonial2.png"
 import testimonial3 from "../../../assets/Testimonials/testimonial3.png"
 import "./styles.css"
-import { LeftCarouselArrow } from "./LeftCarouselArrow"
-import { RightCarouselArrow } from "./RightCarouselArrow"
 
 const images = [
   {
@@ -51,8 +49,9 @@ export const Carousel = () => {
 
   return (
     <div className="carousel">
-      <LeftCarouselArrow onClick={showPrevImage} />
-      <div>
+      <div className="carousel__section">
+        <LeftCarouselArrow onClick={showPrevImage} />
+
         <div className="carousel__items">
           {images.map((image) => (
             <div
@@ -87,18 +86,56 @@ export const Carousel = () => {
             </div>
           ))}
         </div>
-        <div className="carousel__buttons">
-          {images.map((_, index) => (
-            <button
-              className="carousel__button"
-              style={index === imageIndex ? selectedButton : unSelectedButton}
-              onClick={() => setImageIndex(index)}
-            ></button>
-          ))}
-        </div>
+        <RightCarouselArrow onClick={showNextImage} />
       </div>
 
-      <RightCarouselArrow onClick={showNextImage} />
+      <div className="carousel__buttons">
+        {images.map((_, index) => (
+          <button
+            className="carousel__button"
+            style={index === imageIndex ? selectedButton : unSelectedButton}
+            onClick={() => setImageIndex(index)}
+          ></button>
+        ))}
+      </div>
     </div>
+  )
+}
+
+const LeftCarouselArrow = ({ onClick }: { onClick: () => void }) => {
+  return (
+    <svg
+      onClick={() => onClick()}
+      className="arrow left__arrow"
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M36.24 39.76L20.48 24L36.24 8.24L32 4L12 24L32 44L36.24 39.76Z"
+        fill="#EAEAEA"
+      />
+    </svg>
+  )
+}
+
+const RightCarouselArrow = ({ onClick }: { onClick: () => void }) => {
+  return (
+    <svg
+      onClick={() => onClick()}
+      className="arrow right__arrow"
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11.76 8.24L27.52 24L11.76 39.76L16 44L36 24L16 4L11.76 8.24Z"
+        fill="#EAEAEA"
+      />
+    </svg>
   )
 }

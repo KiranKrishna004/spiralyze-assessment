@@ -6,7 +6,7 @@ export const WeUnderstandSection = () => {
     <div className="understand-section">
       <h2>
         <span>WE </span>
-        Understand
+        UNDERSTAND
       </h2>
       <div className="understand-section__textcontainer">
         Older adults want to play active and meaningful roles in their lives,
@@ -18,11 +18,9 @@ export const WeUnderstandSection = () => {
         Older adults want to stay active and contribute to society in a
         reciprocal manner (meaning that they want to exchange their services and
         skills with others for the mutual benefit of the neighborhood or
-        community).
-        <br />
-        Qualitative and quantitative studies published from 2005 to 2016
-        examining the social needs of older adults were eligible for inclusion.{" "}
-        <br />
+        community). Qualitative and quantitative studies published from 2005 to
+        2016 examining the social needs of older adults were eligible for
+        inclusion. <br />
         To stimulate social contacts, neighborhood initiatives can be developed.
         Social meeting places, such as pubs and churches can help to foster the
         development of close and peripheral relationships.
