@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import testimonial1 from "../../../assets/Testimonials/testimonial1.png"
 import testimonial2 from "../../../assets/Testimonials/testimonial2.png"
 import testimonial3 from "../../../assets/Testimonials/testimonial3.png"
@@ -24,6 +24,7 @@ const images = [
 
 export const Carousel = () => {
   const [imageIndex, setImageIndex] = useState(0)
+  const touchStartX = useRef(0)
 
   function showNextImage() {
     setImageIndex((index) => {
@@ -47,6 +48,19 @@ export const Carousel = () => {
     background: "#EAEAEA",
   }
 
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = (e) => {
+    const touchEndX = e.changedTouches[0].clientX
+    if (touchStartX.current - touchEndX > 50) {
+      showNextImage() // Swipe left
+    } else if (touchEndX - touchStartX.current > 50) {
+      showPrevImage() // Swipe right
+    }
+  }
+
   return (
     <div className="carousel">
       <div className="carousel__section">
@@ -55,6 +69,8 @@ export const Carousel = () => {
         <div className="carousel__items">
           {images.map((image) => (
             <div
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
               className="slider-card"
               key={image.url}
               style={{ translate: `${-100 * imageIndex}%` }}
@@ -64,6 +80,7 @@ export const Carousel = () => {
                 <div>
                   <h5 className="card-title-name">Abbie Harvey</h5>
                   <svg
+                    className="card-svg"
                     xmlns="http://www.w3.org/2000/svg"
                     width="60"
                     height="47"

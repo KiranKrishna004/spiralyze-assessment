@@ -115,7 +115,6 @@
 .card-text {
   width: 100%;
   color: #fff;
-  font-family: Montserrat;
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
@@ -134,4 +133,46 @@
 .slick-dots {
   position: relative !important;
   margin-top: 15px !important;
+}
+
+@media (max-width: 1170px) {
+  .carousel__section {
+    gap: 0px;
+    padding: 0px 24px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .card-body {
+    padding: 0px 33px;
+    max-width: 423px;
+    width: 100%;
+  }
+
+  .card-title-name {
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+    margin-top: 8px;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    width: 197.63px;
+    height: 197.63px;
+  }
+
+  .carousel__items {
+    max-width: 720px;
+  }
+  .card-svg {
+    width: 40px;
+    height: 31px;
+  }
 }
