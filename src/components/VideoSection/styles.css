@@ -46,6 +46,10 @@
 .video-container__left h2 {
   color: #ffffff;
   margin-bottom: 48px;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
 }
 
 .video-container__textcontainer div p:first-of-type {
