@@ -1,7 +1,7 @@
 .tootip-button {
   position: relative;
   width: 100%;
-  max-width: 344px;
+  /* max-width: 344px; */
   border-radius: 4px;
   border: 2px solid #5bc8af;
   height: 96px;

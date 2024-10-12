@@ -7,8 +7,8 @@
 }
 
 .outer-circle {
-  width: 200px;
-  height: 200px;
+  width: 166px;
+  height: 166px;
   border-radius: 100%;
   border: 2px solid #ffffff70;
   display: flex;
@@ -28,8 +28,8 @@
 }
 
 .inner-circle {
-  width: 154.15px;
-  height: 154.15px;
+  width: 120.54px;
+  height: 120.54px;
   border-radius: 50%;
   background: #5bc8afcc;
 

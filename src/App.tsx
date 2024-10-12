@@ -8,14 +8,14 @@ import { Carousel } from "./utils/ui/Carousel"
 
 function App() {
   return (
-    <div>
+    <>
       <HeroSection />
       <ImageSection />
       <WeUnderstandSection />
       <Carousel />
       <WeOrganizeSection />
       <VideoSection />
-    </div>
+    </>
   )
 }
 

@@ -1,8 +1,9 @@
 .container {
   background-image: url("../../assets/Herosection/BG.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 650px;
 }
+
 .herosection {
   display: flex;
   justify-content: center;

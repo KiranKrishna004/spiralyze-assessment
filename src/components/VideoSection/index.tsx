@@ -42,7 +42,7 @@ export const VideoSection = () => {
               />
             </svg>
             <div>
-              <p className="">{textObj.title}</p>
+              <p>{textObj.title}</p>
               <p>{textObj.body}</p>
             </div>
           </div>
