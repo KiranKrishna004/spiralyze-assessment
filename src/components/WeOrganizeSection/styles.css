@@ -57,3 +57,23 @@
   gap: 36px;
   padding: 0px 128px;
 }
+
+@media (max-width: 1015px) {
+  .organize-section__textcontainer {
+    padding: 0 24px;
+  }
+
+  .organize-section h2 {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 525px) {
+  .understand-section__textcontainer {
+    padding: 0 16px;
+  }
+
+  .organize-section h2 {
+    padding-left: 16px;
+  }
+}
