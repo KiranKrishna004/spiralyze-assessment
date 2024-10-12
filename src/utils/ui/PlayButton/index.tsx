@@ -1,8 +1,13 @@
+import { Dispatch, SetStateAction } from "react"
 import "./styles.css"
 
-export const PlayButton = () => {
+export const PlayButton = ({
+  setIsShow,
+}: {
+  setIsShow: Dispatch<SetStateAction<boolean>>
+}) => {
   return (
-    <button className="play-button">
+    <button className="play-button" onClick={() => setIsShow(true)}>
       <div className="outer-circle">
         <div className="inner-circle">
           <svg
