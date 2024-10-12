@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { PlayButton } from "../../utils/ui/PlayButton"
 import "./styles.css"
+import bg from "../../assets/Videosection/BG.png"
 
 export const VideoSection = () => {
   const [isShow, setIsShow] = useState(false)
@@ -21,35 +22,38 @@ export const VideoSection = () => {
   return (
     <div className="video-container">
       <VideoPlayer isShow={isShow} setIsShow={setIsShow} />
+      <PlayButton setIsShow={setIsShow} />
       <div className="video-container__left">
-        <h2>
-          <span>WATCH </span>
-          THE VIDEO
-        </h2>
+        <div className="video-texts">
+          <h2>
+            <span>WATCH </span>
+            THE VIDEO
+          </h2>
 
-        {videoTexts.map((textObj) => (
-          <div className="video-container__textcontainer">
-            <svg
-              width="18"
-              height="14"
-              viewBox="0 0 18 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.6 10.6L1.4 6.4L0 7.8L5.6 13.4L17.6 1.4L16.2 0L5.6 10.6Z"
-                fill="#5BC8AF"
-              />
-            </svg>
-            <div>
-              <p>{textObj.title}</p>
-              <p>{textObj.body}</p>
+          {videoTexts.map((textObj) => (
+            <div className="video-container__textcontainer">
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.6 10.6L1.4 6.4L0 7.8L5.6 13.4L17.6 1.4L16.2 0L5.6 10.6Z"
+                  fill="#5BC8AF"
+                />
+              </svg>
+              <div>
+                <p>{textObj.title}</p>
+                <p>{textObj.body}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div className="video-container__right">
-        <PlayButton setIsShow={setIsShow} />
+        <img src={bg} />
       </div>
     </div>
   )
