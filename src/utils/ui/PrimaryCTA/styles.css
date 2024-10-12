@@ -1,4 +1,4 @@
-.button {
+.primary-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   user-select: none; /* Standard syntax */
 }
 
-.button__text {
+.primary-button__text {
   font-family: "Montserrat";
   font-size: 18px;
   text-align: center;
@@ -23,13 +23,13 @@
   font-weight: 700;
 }
 
-.button:hover {
+.primary-button:hover {
   cursor: pointer;
   box-shadow: 0px 8px 6px 0px #00000014;
   transition: box-shadow 0.3s;
 }
 
-.button:active {
+.primary-button:active {
   background: #35bb9c;
   box-shadow: 0px 4px 6px 0px #00000014;
 }

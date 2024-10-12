@@ -29,17 +29,21 @@ export const HeroSection = () => {
         <div className="herosection__right">
           <p className="herosection__right_contact">Contact Us</p>
           <form>
-            <div>
+            <div className="herosection__right__fields">
               <CustomInputField label="First Name" />
               <CustomInputField label="Second Name" />
-            </div>
 
-            <div>
               <CustomInputField label="Business Email" />
               <CustomInputField label="Company" />
+              <CustomSelectField />
             </div>
-            <CustomSelectField />
-            <div style={{ marginTop: "36px" }}>
+            <div
+              style={{
+                marginTop: "36px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <PrimaryCTA buttonText="Submit" />
             </div>
           </form>

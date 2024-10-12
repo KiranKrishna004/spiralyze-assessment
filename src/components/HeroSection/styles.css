@@ -53,14 +53,83 @@
   margin-bottom: 23px;
 }
 
-.herosection__right div {
+/* .herosection__right div {
   display: flex;
   gap: 16px;
+} */
+
+.herosection__right__fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Max 2 columns */
+  grid-gap: 16px; /* Adjust the gap between items */
+  grid-auto-flow: row dense; /* Fill in the odd items */
+  max-width: 100%; /* Ensure it doesn't overflow */
 }
 
-.herosection__right form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 1090px) {
+  .herosection {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding-bottom: 185px;
+  }
+
+  .herosection__left {
+    margin-top: 56px;
+  }
+
+  .container {
+    background-image: url("../../assets/Herosection/BGTab.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .herosection__left h1 {
+    text-align: center;
+  }
+
+  .herosection__subtext {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffffcc;
+    padding-top: 16px;
+    max-width: 574px;
+    padding-left: 0px;
+  }
+
+  .herosection__right {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 525px) {
+  .herosection__left h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .herosection__subtext {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .herosection__right {
+    margin-top: 12px;
+    width: 80%;
+  }
+
+  .herosection__right_contact {
+    font-size: 24px;
+  }
+
+  .herosection {
+    padding-bottom: 167px;
+  }
+
+  .herosection__right__fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }

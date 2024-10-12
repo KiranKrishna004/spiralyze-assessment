@@ -1,8 +1,6 @@
 .custom-field {
   position: relative;
   font-size: 1rem;
-  border-top: 11px solid transparent;
-  margin-bottom: 5px;
   display: inline-block;
   --field-padding: 14px 11px;
 }
@@ -117,4 +115,15 @@
 
 .custom-field.one.has-error .placeholder {
   color: #ff7777; /* Change placeholder color to red when there is a tooltip */
+}
+
+@media (max-width: 525px) {
+  .custom-field input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .custom-field.one input {
+    width: calc(100% - 22px);
+  }
 }
