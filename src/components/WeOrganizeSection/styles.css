@@ -1,0 +1,49 @@
+.organize-section {
+  margin-top: 100px;
+  margin-bottom: 32px;
+}
+
+.organize-section h2 span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333333;
+  color: transparent;
+}
+
+.organize-section h2 {
+  padding-left: 128px;
+  color: #333333;
+}
+
+.organize-section__textcontainer {
+  columns: 23.188rem auto;
+  padding: 0 128px;
+  margin-top: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.organize-section_intervention {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: left;
+}
+
+.organize-section__intervention {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: left;
+}
+
+.organize-section__intervention__subtext {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
