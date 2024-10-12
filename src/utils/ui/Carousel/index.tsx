@@ -48,11 +48,11 @@ export const Carousel = () => {
     background: "#EAEAEA",
   }
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.touches[0].clientX
   }
 
-  const handleTouchEnd = (e) => {
+  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
     const touchEndX = e.changedTouches[0].clientX
     if (touchStartX.current - touchEndX > 50) {
       showNextImage() // Swipe left
