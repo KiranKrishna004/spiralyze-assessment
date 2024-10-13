@@ -52,17 +52,17 @@
   .relative {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 65%;
     transform: translate(-50%, -50%);
     width: fit-content;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 570px) {
   .relative {
     position: absolute;
     left: 50%;
-    top: 71%;
+    top: 75%;
     transform: translate(-50%, -50%);
     width: fit-content;
   }

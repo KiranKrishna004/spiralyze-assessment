@@ -52,9 +52,7 @@ export const VideoSection = () => {
           ))}
         </div>
       </div>
-      <div className="video-container__right">
-        <img src={bg} />
-      </div>
+      {/* <div className="video-container__right"></div> */}
     </div>
   )
 }
