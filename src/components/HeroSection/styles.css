@@ -1,7 +1,10 @@
 .container {
-  background-image: url("../../assets/Herosection/BG.png");
+  background-image: url("../../assets/Herosection/BGbottom2.png"),
+    url("../../assets/Herosection/BGbottom1.png"),
+    url("../../assets/Herosection/BG.png");
   background-repeat: no-repeat;
-  background-size: auto 650px;
+  background-position: bottom, bottom, top;
+  background-size: contain, contain, auto 650px;
 }
 
 .herosection {
@@ -79,9 +82,12 @@
   }
 
   .container {
-    background-image: url("../../assets/Herosection/BGTab.png");
+    background-image: url("../../assets/Herosection/BGbottom2.png"),
+      url("../../assets/Herosection/BGbottom1.png"),
+      url("../../assets/Herosection/BGTab.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 0px 100.1%, 0px 100.1%, top;
+    background-size: 200% 89px, 200% 111px, cover;
   }
 
   .herosection__left h1 {
@@ -104,6 +110,15 @@
 }
 
 @media (max-width: 525px) {
+  .container {
+    background-image: url("../../assets/Herosection/BGbottom2.png"),
+      url("../../assets/Herosection/BGbottom1.png"),
+      url("../../assets/Herosection/BGTab.png");
+    background-repeat: no-repeat;
+    background-position: 0px 100.1%, 0px 100.1%, top;
+    background-size: 400% 89px, 400% 111px, cover;
+  }
+
   .herosection__left h1 {
     font-size: 36px;
     line-height: 44px;
@@ -131,5 +146,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .herosection__right {
+    padding: 36px 16px 56px 16px;
   }
 }
