@@ -7,15 +7,6 @@ export const Navbar = ({
   page: string
   setPage: React.Dispatch<React.SetStateAction<string>>
 }) => {
-  const selectedStyle = {
-    color: "#ffffff",
-    textDecoration: "underline",
-  }
-
-  const unSelectedStyle = {
-    color: "",
-  }
-  console.log(page)
   return (
     <div className="navbar">
       <svg
@@ -132,9 +123,7 @@ export const Navbar = ({
           >
             CONTACT
           </a>
-          <p className="redirect__dash" style={unSelectedStyle}>
-            |
-          </p>
+          <p className="redirect__dash">|</p>
         </div>
         <span className="navbar__contact">
           CALL NOW FOR A CONSULT

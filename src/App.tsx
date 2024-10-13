@@ -1,23 +1,16 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
 import "./App.css"
-import { Footer } from "./components/Footer"
-import { HeroSection } from "./components/HeroSection"
-import { ImageSection } from "./components/ImageSection"
-import { VideoSection } from "./components/VideoSection"
-import { WeOrganizeSection } from "./components/WeOrganizeSection"
-import { WeUnderstandSection } from "./components/WeUnderstandSection"
-import { Carousel } from "./utils/ui/Carousel"
+import { HomePage } from "./pages/HomePage"
+import { ThankYou } from "./pages/ThankYou"
 
 function App() {
   return (
-    <>
-      <HeroSection />
-      <ImageSection />
-      <WeUnderstandSection />
-      <Carousel />
-      <WeOrganizeSection />
-      <VideoSection />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   )
 }
 

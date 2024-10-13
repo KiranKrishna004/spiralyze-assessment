@@ -1,0 +1,45 @@
+.thankyou__page {
+  height: 100vh;
+}
+
+.thankyou__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou__content {
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px 20px;
+}
+
+.thankyou__content h2 {
+  text-align: center;
+}
+
+.thankyou__content p {
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media (max-width: 670px) {
+  .thankyou__content {
+    max-width: 300px;
+    padding: 50px 20px;
+  }
+
+  .thankyou__content h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .thankyou__content p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
