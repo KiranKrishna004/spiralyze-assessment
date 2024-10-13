@@ -30,7 +30,7 @@ export const VideoSection = () => {
           </h2>
 
           {videoTexts.map((textObj) => (
-            <div className="video-container__textcontainer">
+            <div key={textObj.title} className="video-container__textcontainer">
               <svg
                 width="18"
                 height="14"

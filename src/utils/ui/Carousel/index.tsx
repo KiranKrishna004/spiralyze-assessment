@@ -109,6 +109,7 @@ export const Carousel = () => {
       <div className="carousel__buttons">
         {images.map((_, index) => (
           <button
+            key={index}
             className="carousel__button"
             style={index === imageIndex ? selectedButton : unSelectedButton}
             onClick={() => setImageIndex(index)}
