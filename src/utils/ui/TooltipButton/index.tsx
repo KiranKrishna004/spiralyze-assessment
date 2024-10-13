@@ -5,7 +5,7 @@ export const ToolTipButton = ({ buttonText }: { buttonText: string }) => {
     <div className="tootip-button">
       <div className="tootip-button__text__tip">
         <p className="tootip-button__text">{buttonText}</p>
-        {/* <ToolTipIcon /> */}
+        <ToolTipIcon />
       </div>
       <span className="tootip-button__tooltiptext">
         We’re experienced in our individual crafts and understand how each one

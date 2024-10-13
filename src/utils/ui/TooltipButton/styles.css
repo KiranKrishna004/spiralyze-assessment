@@ -1,7 +1,6 @@
 .tootip-button {
   position: relative;
   width: 100%;
-  /* max-width: 344px; */
   border-radius: 4px;
   border: 2px solid #5bc8af;
   height: 96px;
@@ -16,6 +15,7 @@
   transition: all 0.3s ease;
   cursor: default;
   vertical-align: middle;
+  max-width: 299px;
 }
 
 .tootip-button:hover .tootip-button__text {
@@ -65,7 +65,8 @@
 }
 
 .button__tip {
-  visibility: hidden;
+  position: absolute;
+  right: 10%;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0s;
 }
@@ -74,4 +75,20 @@
 .tootip-button:hover .button__tip {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 850px) {
+  .button__tip {
+    right: 8%;
+  }
+}
+
+@media (max-width: 420px) {
+  .tootip-button__text {
+    max-width: 280px;
+  }
+
+  .button__tip {
+    right: 5%;
+  }
 }
