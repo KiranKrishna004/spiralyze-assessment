@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { PlayButton } from "../../utils/ui/PlayButton"
 import "./styles.css"
-import bg from "../../assets/Videosection/BG.png"
 
 export const VideoSection = () => {
   const [isShow, setIsShow] = useState(false)
@@ -52,7 +51,6 @@ export const VideoSection = () => {
           ))}
         </div>
       </div>
-      {/* <div className="video-container__right"></div> */}
     </div>
   )
 }
