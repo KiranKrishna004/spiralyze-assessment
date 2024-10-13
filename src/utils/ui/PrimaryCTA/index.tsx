@@ -1,8 +1,16 @@
+import { useNavigate } from "react-router-dom"
 import "./styles.css"
 
 export const PrimaryCTA = ({ buttonText }: { buttonText: string }) => {
+  const navigate = useNavigate()
+
   return (
-    <div className="primary-button">
+    <div
+      className="primary-button"
+      onClick={() => {
+        navigate("/thank-you")
+      }}
+    >
       <SubmitIcon />
       <p className="primary-button__text">{buttonText}</p>
     </div>
@@ -12,7 +20,6 @@ export const PrimaryCTA = ({ buttonText }: { buttonText: string }) => {
 const SubmitIcon = () => {
   return (
     <svg
-      onClick={() => {}}
       width="24"
       height="24"
       viewBox="0 0 24 24"

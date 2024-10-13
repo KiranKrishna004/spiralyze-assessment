@@ -14,6 +14,14 @@
   gap: 7px;
 }
 
+.footer__right p {
+  cursor: pointer;
+}
+
+.footer__right p:hover {
+  color: black;
+}
+
 @media (max-width: 915px) {
   .footer {
     padding: 38px 0px;
