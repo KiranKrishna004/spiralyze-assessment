@@ -11,6 +11,34 @@
   align-items: center;
   gap: 31px;
 }
+.redirect__dash {
+  color: #ffffff80;
+}
+
+.navbar__link {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.navbar__link:hover {
+  color: #ffffff;
+}
+
+.navbar__link__unselectedStyle {
+  color: #ffffffb2;
+  font-weight: 400;
+}
+
+.navbar__link__selectedStyle {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.navbar__link__selectedStyle:hover {
+  color: #ffffff;
+}
 
 .navbar__contact {
   font-weight: 700;

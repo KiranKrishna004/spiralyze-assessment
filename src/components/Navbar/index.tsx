@@ -8,19 +8,14 @@ export const Navbar = ({
   setPage: React.Dispatch<React.SetStateAction<string>>
 }) => {
   const selectedStyle = {
-    fontSize: "14px",
-    fontWeight: 700,
-    lineHeight: "41px",
     color: "#ffffff",
+    textDecoration: "underline",
   }
 
   const unSelectedStyle = {
-    fontSize: "14px",
-    fontWeight: 400,
-    lineHeight: "41px",
-    color: "#FFFFFFB2",
+    color: "",
   }
-
+  console.log(page)
   return (
     <div className="navbar">
       <svg
@@ -108,19 +103,31 @@ export const Navbar = ({
       <div className="navbar__rightsection">
         <div className="navbar__redirect_section">
           <a
-            style={page === "/" ? selectedStyle : unSelectedStyle}
+            className={`${
+              page === "/"
+                ? "navbar__link__selectedStyle"
+                : "navbar__link__unselectedStyle"
+            } navbar__link`}
             onClick={() => setPage("/")}
           >
             HOME
           </a>
           <a
-            style={page === "/about" ? selectedStyle : unSelectedStyle}
+            className={`${
+              page === "/about"
+                ? "navbar__link__selectedStyle"
+                : "navbar__link__unselectedStyle"
+            } navbar__link`}
             onClick={() => setPage("/about")}
           >
             ABOUT
           </a>
           <a
-            style={page === "/contact" ? selectedStyle : unSelectedStyle}
+            className={`${
+              page === "/contact"
+                ? "navbar__link__selectedStyle"
+                : "navbar__link__unselectedStyle"
+            } navbar__link`}
             onClick={() => setPage("/contact")}
           >
             CONTACT
