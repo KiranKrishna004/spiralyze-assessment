@@ -157,6 +157,13 @@
 }
 
 @media (max-width: 570px) {
+  iframe {
+    aspect-ratio: 16 / 9;
+
+    width: 400px;
+    height: 225px;
+  }
+
   .video-container {
     height: 900px;
     background: url("../../assets/Videosection/LeftBGreenTab.png"),
@@ -193,6 +200,15 @@
     font-size: 14px;
     line-height: 24px;
     color: #ffffffcc;
+  }
+}
+
+@media (max-width: 410px) {
+  iframe {
+    aspect-ratio: 16 / 9;
+
+    width: 350px;
+    height: 197px;
   }
 }
 
