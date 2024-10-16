@@ -101,16 +101,15 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
   }
-}
-
-@media (max-width: 525px) {
   .organize-section__textcontainer {
     padding: 0 13px;
     column-count: auto;
     height: 100%;
     margin-top: 32px;
   }
+}
 
+@media (max-width: 525px) {
   .organize-section h2 {
     padding-left: 16px;
   }

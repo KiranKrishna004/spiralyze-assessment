@@ -46,13 +46,15 @@
   }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 700px) {
   .understand-section__textcontainer {
     column-count: auto;
     height: 100%;
     padding: 0 16px;
   }
+}
 
+@media (max-width: 525px) {
   .understand-section h2 {
     padding-left: 16px;
   }
