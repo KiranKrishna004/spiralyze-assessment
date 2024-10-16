@@ -48,10 +48,17 @@
 
 @media (max-width: 525px) {
   .understand-section__textcontainer {
+    column-count: auto;
+    height: 100%;
     padding: 0 16px;
   }
 
   .understand-section h2 {
     padding-left: 16px;
+  }
+
+  .understand-section__textcontainer p {
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 }

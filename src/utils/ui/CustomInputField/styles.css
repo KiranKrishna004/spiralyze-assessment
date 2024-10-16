@@ -124,6 +124,6 @@
   }
 
   .custom-field.one input {
-    width: calc(100% - 22px);
+    width: calc(100% - 20px);
   }
 }

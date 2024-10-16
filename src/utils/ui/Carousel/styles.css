@@ -139,7 +139,7 @@
 @media (max-width: 1170px) {
   .carousel__section {
     gap: 0px;
-    padding: 0px 24px;
+    padding: 0px 16px;
   }
 
   .arrow {
@@ -229,7 +229,7 @@
   }
 
   .carousel {
-    margin-top: 0px;
+    margin-top: -22px;
   }
 
   .card-text {
@@ -244,5 +244,21 @@
 
   .card-svg {
     top: 0px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-body {
+    padding: 0px 35px 100px 29px;
+    padding-top: 106px;
+    padding-bottom: 74.5px;
+  }
+
+  .card-text {
+    padding-top: 12px;
+    padding-left: 3px;
+  }
+  .carousel__items {
+    gap: 5px;
   }
 }

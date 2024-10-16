@@ -49,7 +49,7 @@
 }
 
 .organize-section__buttons {
-  margin-top: 36px;
+  margin-top: 14px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -99,15 +99,39 @@
   .organize-section__buttons {
     padding: 0 16px;
     grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
   }
 }
 
 @media (max-width: 525px) {
-  .understand-section__textcontainer {
-    padding: 0 16px;
+  .organize-section__textcontainer {
+    padding: 0 13px;
+    column-count: auto;
+    height: 100%;
+    margin-top: 32px;
   }
 
   .organize-section h2 {
     padding-left: 16px;
+  }
+
+  .organize-section {
+    margin: 90px 0px 100px 0px;
+  }
+
+  .loneliness1 {
+    padding: 60px 3px 0px 3px;
+  }
+
+  .loneliness2 {
+    padding: 40px 3px 0px 3px;
+  }
+
+  .organize-section__buttons {
+    margin-top: 86px;
+  }
+
+  .organize-section {
+    margin: 90px 0px 81px 0px;
   }
 }

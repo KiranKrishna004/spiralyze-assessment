@@ -23,11 +23,13 @@ export const WeUnderstandSection = () => {
         Qualitative and quantitative studies published from 2005 to 2016
         examining the social needs of older adults were eligible for inclusion.{" "}
         <br />
-        To stimulate social contacts, neighborhood initiatives can be developed.
-        Social meeting places, such as pubs and churches can help to foster the
-        development of close and peripheral relationships.
-        <br />
-        <br />
+        <p>
+          To stimulate social contacts, neighborhood initiatives can be
+          developed. Social meeting places, such as pubs and churches can help
+          to foster the development of close and peripheral relationships.
+        </p>
+        <br className="mobile-hide tab-break" />
+        <br className="mobile-hide tab-break" />
         <SecondaryCTA buttonText="92% Success Rate" />
       </div>
     </div>

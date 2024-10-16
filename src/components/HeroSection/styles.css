@@ -7,6 +7,12 @@
   background-size: contain, contain, auto;
 }
 
+.submit-button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 .herosection {
   display: flex;
   justify-content: center;
@@ -69,15 +75,6 @@
   max-width: 100%; /* Ensure it doesn't overflow */
 }
 
-.tab-break {
-  display: none;
-}
-@media (max-width: 768px) {
-  .tab-break {
-    display: block;
-  }
-}
-
 @media (max-width: 1090px) {
   .herosection {
     flex-direction: column;
@@ -135,6 +132,10 @@
     background-size: 400% 89px, 400% 111px, cover;
   }
 
+  .herosection__left {
+    margin-top: 31px;
+  }
+
   .herosection__left h1 {
     font-size: 36px;
     line-height: 44px;
@@ -143,6 +144,8 @@
   .herosection__subtext {
     font-size: 14px;
     line-height: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .herosection__right {
@@ -150,12 +153,12 @@
     width: 80%;
   }
 
-  .herosection__right_contact {
+  .herosection__right .herosection__right_contact {
     font-size: 24px;
   }
 
   .herosection {
-    padding-bottom: 167px;
+    padding-bottom: 181px;
   }
 
   .herosection__right__fields {
@@ -165,6 +168,11 @@
   }
 
   .herosection__right {
-    padding: 36px 16px 56px 16px;
+    padding: 34px 20px 56px 20px;
+  }
+
+  .submit-button {
+    margin-top: 35px;
+    width: 100%;
   }
 }

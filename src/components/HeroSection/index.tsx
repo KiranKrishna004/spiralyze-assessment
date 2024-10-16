@@ -25,7 +25,7 @@ export const HeroSection = () => {
             <span>in several</span> ways : <br className="break" />
             acknowledging and putting to use the talents and skills of older
             adults; creating intergenerational initiatives; and allowing older
-            adults to stay active and independent <br />
+            adults to stay active and independent <br className="tab-break" />
             for as long as possible.
           </p>
         </div>
@@ -40,13 +40,7 @@ export const HeroSection = () => {
               <CustomInputField label="Company" />
               <CustomSelectField />
             </div>
-            <div
-              style={{
-                marginTop: "40px",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
+            <div className="submit-button">
               <PrimaryCTA buttonText="Submit" />
             </div>
           </form>

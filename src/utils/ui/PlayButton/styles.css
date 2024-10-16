@@ -80,8 +80,18 @@
   .relative {
     position: absolute;
     left: 50%;
-    top: 75%;
+    top: 73.1%;
     transform: translate(-50%, -50%);
     width: fit-content;
+  }
+
+  .inner-circle {
+    width: 95px;
+    height: 95px;
+  }
+
+  .outer-circle {
+    width: 125px;
+    height: 125px;
   }
 }

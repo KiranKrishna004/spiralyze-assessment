@@ -26,11 +26,30 @@ h2 {
   line-height: 46px;
   text-align: left;
 }
+.mobile-hide {
+  display: block;
+}
+
+.tab-break {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .tab-break {
+    display: block;
+  }
+}
 
 @media (max-width: 525px) {
+  .tab-break {
+    display: none;
+  }
   h2 {
     font-size: 24px;
     line-height: 32px;
+  }
+  .mobile-hide {
+    display: none;
   }
 }
 
