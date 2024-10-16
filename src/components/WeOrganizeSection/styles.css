@@ -1,5 +1,5 @@
 .organize-section {
-  margin: 100px 0px 93px 0px;
+  margin: 100px 0px 100px 0px;
 }
 
 .organize-section h2 span {
@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .organize-section__textcontainer {
     padding: 0 24px;
     column-count: 2;

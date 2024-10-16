@@ -20,7 +20,8 @@ export const HeroSection = () => {
             INTERVENTION
           </h1>
           <p className="herosection__subtext">
-            Showing greater respect to older adults can be done <br />
+            Showing greater respect to older adults can be done{" "}
+            <br className="tab-break" />
             <span>in several</span> ways : <br className="break" />
             acknowledging and putting to use the talents and skills of older
             adults; creating intergenerational initiatives; and allowing older

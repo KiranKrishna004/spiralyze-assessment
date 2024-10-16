@@ -19,7 +19,7 @@ export const WeUnderstandSection = () => {
         Older adults want to stay active and contribute to society in a
         reciprocal manner (meaning that they want to exchange their services and
         skills with others for the mutual benefit of the neighborhood or
-        community). <br />
+        community). <br className="tab-break" />
         Qualitative and quantitative studies published from 2005 to 2016
         examining the social needs of older adults were eligible for inclusion.{" "}
         <br />

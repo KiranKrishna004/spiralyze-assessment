@@ -69,6 +69,15 @@
   max-width: 100%; /* Ensure it doesn't overflow */
 }
 
+.tab-break {
+  display: none;
+}
+@media (max-width: 768px) {
+  .tab-break {
+    display: block;
+  }
+}
+
 @media (max-width: 1090px) {
   .herosection {
     flex-direction: column;
