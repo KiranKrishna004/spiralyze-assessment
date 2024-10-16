@@ -6,11 +6,11 @@ export const VideoSection = () => {
   const [isShow, setIsShow] = useState(false)
   const videoTexts = [
     {
-      title: "Needs Assessment",
+      title: "Needs Assesment",
       body: "The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program.",
     },
     {
-      title: "Insurance Advocacy",
+      title: "Insuarance Advocacy",
       body: "We are committed to advocating for appropriate coverage and payment policies.",
     },
     {

@@ -6,27 +6,9 @@ import "./styles.css"
 export const ImageSection = () => {
   return (
     <div className="image-section">
-      <img
-        className="image"
-        src={img1}
-        alt="img1 missing"
-        height="180"
-        width="371"
-      />
-      <img
-        className="image"
-        src={img2}
-        alt="img2 missing"
-        height={180}
-        width={371}
-      />
-      <img
-        className="image"
-        src={img3}
-        alt="img3 missing"
-        height={180}
-        width={371}
-      />
+      <img className="image" src={img1} alt="img1 missing" />
+      <img className="image" src={img2} alt="img2 missing" />
+      <img className="image" src={img3} alt="img3 missing" />
     </div>
   )
 }

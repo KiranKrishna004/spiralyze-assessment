@@ -58,6 +58,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  .relative {
+    position: absolute;
+    right: 20%;
+    top: 59%;
+  }
+
+  .inner-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .outer-circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 @media (max-width: 570px) {
   .relative {
     position: absolute;

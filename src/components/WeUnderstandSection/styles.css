@@ -23,11 +23,22 @@
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .understand-section {
+    padding-bottom: 95px;
+  }
 }
 
 @media (max-width: 1015px) {
   .understand-section__textcontainer {
     padding: 0 24px;
+    column-count: 2;
+    column-gap: 1.5rem;
+    column-fill: auto;
+    height: 350px;
   }
 
   .understand-section h2 {

@@ -17,15 +17,17 @@ export const WeOrganizeSection = () => {
         CAN ORGANIZE EVERYTHING
       </h2>
       <div className="organize-section__textcontainer">
-        <span className="organize-section__intervention">Interventions</span>
-        <span className="organize-section__intervention__subtext">
+        <span className="tab-hide organize-section__intervention">
+          Interventions
+        </span>
+        <span className="tab-hide organize-section__intervention__subtext">
           &nbsp; should focus on older adult’s desire for connectedness,
           participation and independence.
         </span>
         <br />
-        <br />
-        <br />
-        <br />
+        <br className="break" />
+        <br className="break" />
+        <br className="break" />
         Loneliness and social isolation are growing public health concerns in
         our aging society. Whilst these experiences occur across the life span,
         50% of individuals aged over 60 are at risk of social isolation and

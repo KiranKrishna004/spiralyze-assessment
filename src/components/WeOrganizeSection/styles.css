@@ -73,6 +73,23 @@
   }
 }
 
+@media (max-width: 786px) {
+  .organize-section__textcontainer {
+    padding: 0 24px;
+    column-count: 2;
+    column-gap: 1.5rem;
+    column-fill: auto;
+    height: 280px;
+  }
+  .organize-section {
+    margin: 100px 0px 100px 0px;
+  }
+  .organize-section__buttons {
+    margin-top: 62px;
+    gap: 24px;
+  }
+}
+
 @media (max-width: 1014px) {
   .organize-section__buttons {
     grid-template-columns: repeat(2, 1fr);

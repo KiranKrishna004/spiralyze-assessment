@@ -15,15 +15,19 @@ export const WeUnderstandSection = () => {
         purpose can become problematic as people age. Engaging them in leisure
         activities and volunteer work is important.
         <br />
+        <br />
         Older adults want to stay active and contribute to society in a
         reciprocal manner (meaning that they want to exchange their services and
         skills with others for the mutual benefit of the neighborhood or
-        community). Qualitative and quantitative studies published from 2005 to
-        2016 examining the social needs of older adults were eligible for
-        inclusion. <br />
+        community). <br />
+        Qualitative and quantitative studies published from 2005 to 2016
+        examining the social needs of older adults were eligible for inclusion.{" "}
+        <br />
         To stimulate social contacts, neighborhood initiatives can be developed.
         Social meeting places, such as pubs and churches can help to foster the
         development of close and peripheral relationships.
+        <br />
+        <br />
         <SecondaryCTA buttonText="92% Success Rate" />
       </div>
     </div>

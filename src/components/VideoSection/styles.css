@@ -156,6 +156,30 @@
     padding-right: 16px;
   }
 }
+@media (max-width: 768px) {
+  .video-container__left h2 {
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 62px;
+  }
+
+  .video-texts {
+    max-width: 100%;
+  }
+
+  .video-container__textcontainer {
+    padding-left: 32px;
+    padding-right: 10px;
+  }
+
+  .video-container > div.video-container__left > div > div:nth-child(3) > div {
+    padding-bottom: 10px;
+  }
+  .video-container {
+    height: 973px;
+    background-size: 100% 649px, 100% 672px, 100%;
+  }
+}
 
 @media (max-width: 570px) {
   iframe {

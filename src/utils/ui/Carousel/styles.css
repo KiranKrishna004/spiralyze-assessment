@@ -180,6 +180,20 @@
   }
 }
 
+@media (max-width: 768px) {
+  .card-body div {
+    padding-top: 20px;
+    /* padding-left: 3px; */
+  }
+  .card-body {
+    padding: 0px 38px;
+    border-radius: 0px 16px 16px 0px;
+  }
+  .card-text {
+    margin-top: 7px;
+  }
+}
+
 @media (max-width: 760px) {
   .card-body {
     max-width: 264px;

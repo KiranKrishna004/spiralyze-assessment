@@ -16,6 +16,22 @@
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .image-section {
+    padding-top: 0px;
+    margin-top: 20px;
+    padding-bottom: 58px;
+    gap: 25px;
+  }
+
+  .image {
+    height: 138px;
+    width: 224px;
+    object-fit: contain;
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 700px) {
   .image-section {
     display: none;

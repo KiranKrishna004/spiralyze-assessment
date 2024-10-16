@@ -78,7 +78,10 @@
   }
 
   .herosection__left {
-    margin-top: 56px;
+    margin-top: 34px;
+  }
+  .break {
+    display: none;
   }
 
   .container {
@@ -95,13 +98,17 @@
   }
 
   .herosection__subtext {
+    font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     text-align: center;
     color: #ffffffcc;
-    padding-top: 16px;
+    /* background: #FFFFFFCC; */
+
+    padding-top: 13px;
     max-width: 574px;
     padding-left: 0px;
+    padding-bottom: 3px;
   }
 
   .herosection__right {
