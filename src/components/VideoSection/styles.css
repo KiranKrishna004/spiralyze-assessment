@@ -4,9 +4,9 @@
     url("../../assets/Videosection/LeftBGWhite.png"),
     url("../../assets/Videosection/BG.png");
   background-repeat: no-repeat;
-  background-size: contain, contain, contain;
+  /* background-size: contain, contain, contain; */
   background-position: left, left, right;
-  padding: 94px 0px 93px 128px;
+  padding: 80px 0px 75px 128px;
 }
 
 .video-container__left {
@@ -36,8 +36,8 @@
 .video-container__textcontainer div {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding-bottom: 22px;
+  gap: 7px;
+  padding-bottom: 23px;
 }
 
 .video-container__textcontainer svg {
@@ -53,11 +53,12 @@
 
 .video-container__left h2 {
   color: #ffffff;
-  margin-bottom: 48px;
+  margin-bottom: 47px;
   font-size: 44px;
   font-weight: 700;
   line-height: 52px;
   text-align: left;
+  padding-top: 15px;
 }
 
 .video-container__textcontainer div p:first-of-type {

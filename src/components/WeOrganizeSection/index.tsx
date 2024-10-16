@@ -17,10 +17,10 @@ export const WeOrganizeSection = () => {
         CAN ORGANIZE EVERYTHING
       </h2>
       <div className="organize-section__textcontainer">
-        <span className="organize-section__intervention">Interventions </span>
+        <span className="organize-section__intervention">Interventions</span>
         <span className="organize-section__intervention__subtext">
-          should focus on older adult’s desire for connectedness, participation
-          and independence.
+          &nbsp; should focus on older adult’s desire for connectedness,
+          participation and independence.
         </span>
         <br />
         <br />

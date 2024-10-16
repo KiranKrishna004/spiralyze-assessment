@@ -21,7 +21,8 @@ export const HeroSection = () => {
           </h1>
           <p className="herosection__subtext">
             Showing greater respect to older adults can be done in several ways
-            : acknowledging and putting to use the talents and skills of older
+            : <br />
+            acknowledging and putting to use the talents and skills of older
             adults; creating intergenerational initiatives; and allowing older
             adults to stay active and independent for as long as possible.
           </p>
@@ -31,7 +32,7 @@ export const HeroSection = () => {
           <form>
             <div className="herosection__right__fields">
               <CustomInputField label="First Name" />
-              <CustomInputField label="Second Name" />
+              <CustomInputField label="Last Name" />
 
               <CustomInputField label="Business Email" />
               <CustomInputField label="Company" />
@@ -39,7 +40,7 @@ export const HeroSection = () => {
             </div>
             <div
               style={{
-                marginTop: "36px",
+                marginTop: "40px",
                 display: "flex",
                 justifyContent: "center",
               }}

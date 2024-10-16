@@ -78,7 +78,7 @@
 }
 
 .card-body {
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 12px 12px 0px;
   background: #194d44;
   box-shadow: 0px 10px 30px 0px #0000001f;
   margin-left: 36px;
@@ -92,7 +92,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-top: 34px;
+  padding-top: 37px;
   color: #fff;
   font-family: Montserrat;
   font-size: 24px;
