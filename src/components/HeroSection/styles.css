@@ -3,7 +3,7 @@
     url("../../assets/Herosection/BGbottom1.png"),
     url("../../assets/Herosection/BG.png");
   background-repeat: no-repeat;
-  background-position: bottom, bottom, top;
+  background-position: 0px 560px, 0px 540px, top;
   background-size: contain, contain, auto;
 }
 
